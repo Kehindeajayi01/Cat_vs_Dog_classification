@@ -27,7 +27,7 @@ if uploaded_file is not None:
     img = np.expand_dims(img, axis = 0)
 
     # load the trained model
-    model = load_model("C:/Users/ajayi/OneDrive/Desktop/MLOps/Cat_Dog/vgg_model.h5")
+    model = load_model("vgg_model.h5")
 
     # Make preedictions
     prediction = model.predict(img)
